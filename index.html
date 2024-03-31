@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+  <title>Ayudar a alcanzar sueños</title>
+
+  <meta property="og:title" content="Ayudar a alcanzar sueños" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="canonical" href="//" />
+
+  <meta property="og:url" content="//" />
+
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+  <meta name="theme-color" content="#5540af" />
+
+  <meta property="og:site_name" content="Atom Template" />
+
+  <meta property="og:image" content="//assets/img/social.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@tailwindmade" />
+
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="preload" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+
+  <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+</head>
+
+
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+
+  <div id="main" class="relative">
+    <div x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}">
+    </div>
+
+
+
+    <div>
+      <div class="relative py-8 bg-center bg-no-repeat bg-cover" style="background-image: url(/assets/img/bg-hero.jpg)">
+        <div
+          class="absolute inset-0 z-20 bg-center bg-no-repeat bg-cover bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to">
+        </div>
+
+        <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
+          <div class="flex flex-col items-center justify-center lg:flex-row">
+            <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+              <h1 class="text-4xl text-center text-white font-header sm:text-left sm:text-5xl md:text-6xl">
+                Docente, conoce la guía de servicios y acompañamiento estudiantil
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-grey-50" id="about">
+        <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+          <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+            <h2 class="text-4xl font-semibold uppercase font-header text-primary sm:text-5xl lg:text-6xl">
+              SAFI
+            </h2>
+            <h4 class="pt-6 text-xl font-medium text-black font-header sm:text-2xl lg:text-3xl">
+              Sistema de Acompañamiento a la Formación Integral
+            </h4>
+            <p class="pt-6 leading-relaxed font-body text-grey-20">
+              Los siguientes son los servicios que nuestros estudiantes pueden activar cuando tengan una dificultad que
+              ponga en riesgo su permanencia en la Universidad.
+            </p>
+            <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+
+            </div>
+          </div>
+          <div class="w-full pt-10 pl-0 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+            <div>
+              <div class="flex items-end justify-between">
+                <h4 class="font-semibold text-black uppercase font-body">
+                  Éxito académico
+                </h4>
+              </div>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-end justify-between">
+                <h4 class="font-semibold text-black uppercase font-body">Acompañamiento emocional</h4>
+              </div>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-end justify-between">
+                <h4 class="font-semibold text-black uppercase font-body">
+                  Acompañamiento socioeconómico
+                </h4>
+              </div>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-end justify-between">
+                <h4 class="font-semibold text-black uppercase font-body">Acompañamiento integral</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20" id="services">
+        <h2 class="mb-3 text-4xl font-semibold text-center uppercase font-header text-primary sm:text-3xl lg:text-6xl">
+          Servicio de apoyo para el éxito académico
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Monitorías académicas
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Pregunta a tu profesor por el
+                monitor de tu curso o a
+                fortalecimiento.academico@
+                upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                GAIA
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 11, primer piso GAIA
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Asesorías de métodos de estudio
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14
+                Bienestar Institucional
+                bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Gym para el cerebro
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14
+                bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Grupo de fortalecimiento cognitivo
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14 bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Talleres de razonamiento cuantitativo y lectura crítica
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                reto.saber@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Orientación vocacional
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14. bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Seguimiento bajo rendimiento
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Programa de PermanenciaCoord SAFI. Bloque 15, piso 0. permanencia.medellin@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Asesorías académicas
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Programa de PermanenciaCoord SAFI. Bloque 15, piso 0. permanencia.medellin@upb.edu.co
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='bg-primary'>
+        <div class="container py-16 md:py-20" id="services">
+          <h2 class="mb-3 text-4xl font-semibold text-center text-white uppercase font-header sm:text-3xl lg:text-6xl">
+            Servicios de apoyo para el acompañamiento emocional
+          </h2>
+
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Asesoría psicológica
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Psicoterapia
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Centro de Atención Psicológica Centro de Familia
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Acompañamiento espiritual
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Contacta al Capellán de tu Escuela.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Ágora emocional
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Ciclo expresarte
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Siembra palabra
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Sanamente
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Talleres de Vida Universitaria
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Acompañamiento a capacidades diversas
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20" id="services">
+        <h2 class="mb-3 text-4xl font-semibold text-center uppercase font-header text-primary sm:text-3xl lg:text-6xl">
+          Servicios de apoyo para el acompañamiento socioeconómico
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Inteligencia financiera
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Asesoría en financiamiento de matrícula
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Becas
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Fundación Solidaria. https://www.upb.edu.co/es/fundacion-solidaria Teléfono: (+57) 3147324813. Celular: 3147324813. Correo: funsolidaria@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Acompañamiento ventas móviles
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 py-12 rounded shadow group hover:bg-primary">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Campañas de solidaridad
+              </h3>
+              <p class="pt-4 text-sm text-grey group-hover:text-white md:text-base">
+                Bloque 6, primer piso. Coordinación Pastoral. Capellanes Escuela
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='bg-primary'>
+        <div class="container py-16 md:py-20" id="services">
+          <h2 class="mb-3 text-4xl font-semibold text-center text-white uppercase font-header sm:text-3xl lg:text-6xl">
+            Servicio de acompañamiento integral
+          </h2>
+
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Tutoría
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Para estudiantes primer semestre.Pregunta en tu Facultad por tu tutor.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Consejería integral
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Para estudiantes de segundo semestre en adelante. Pregunta en tu Facultad por tu consejero.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Acompañamiento a estudiantes becados
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Programa de Permanencia-Coord SAFI. Bloque 15, piso 0 permanencia.medellin@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Promoción y prevención
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Líderes UPB
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Coordinación pastoral. Bloque 6, primer piso. lideres.medellin@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Deportes
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Cultura
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Bloque 14. Bienestar Institucional bienestarinstitucional.med@upb.edu.co
+                </p>
+              </div>
+            </div>
+
+            <div class="px-8 py-12 bg-white rounded shadow group">
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Línea segura y de emergencias
+                </h3>
+                <p class="pt-4 text-sm text-grey md:text-base">
+                  Línea segura y emergencias: 354 45 17 - 311 634 42 03
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
